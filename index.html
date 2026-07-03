@@ -243,6 +243,17 @@
     .client-type-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--navy); margin-bottom: 0.5rem; }
     .client-type-desc { font-size: 0.81rem; color: var(--muted); line-height: 1.75; }
 
+    /* AREAS */
+    #areas { background: var(--white); border-top: 1px solid var(--border); }
+    .areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 2.5rem; }
+    .area-card { background: var(--cream); padding: 2rem 1.8rem; text-decoration: none; display: block; transition: background 0.25s; position: relative; }
+    .area-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease; }
+    .area-card:hover { background: var(--white); }
+    .area-card:hover::before { transform: scaleX(1); }
+    .area-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; color: var(--navy); margin-bottom: 0.5rem; }
+    .area-card-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.65; }
+    .area-card-link { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-top: 1rem; display: block; }
+
     /* CONTACT */
     #contact { background: var(--white); border-top: 1px solid var(--border); }
     .contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 6rem; align-items: start; }
@@ -375,6 +386,7 @@
         <div class="credential">PE-backed board experience across veterinary, professional services, fintech and consumer sectors</div>
         <div class="credential">Delivered exits, Series A fundraising, debt structuring, and commercial transformation</div>
         <div class="credential">Former Great Britain age-group representative, duathlon</div>
+        <div class="credential">Founder of <a href="https://www.vercro.co.uk" target="_blank" rel="noopener" style="color:var(--gold);text-decoration:none;">Vercro</a> &mdash; AI-powered SaaS app &mdash; bringing direct founder experience in product strategy, grant funding, KPI frameworks and SaaS growth</div>
       </div>
     </div>
     <div class="about-card fade-in">
@@ -570,6 +582,45 @@
           <p class="client-type-desc">Working towards a trade sale or private equity exit &mdash; where financial preparation, EBITDA quality, and exit readiness determine the multiple.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- AREAS WE SERVE -->
+  <section id="areas">
+    <p class="section-eyebrow">Where We Work</p>
+    <h2>Areas <em>we serve</em></h2>
+    <p class="section-intro" style="margin-bottom:0;">Based in Wynyard, we work with businesses across the North East, Yorkshire and nationally. Click your region to find out more.</p>
+    <div class="areas-grid">
+      <a href="fractional-cfo-north-east.html" class="area-card fade-in">
+        <div class="area-card-title">North East England</div>
+        <p class="area-card-desc">Fractional CFO support for businesses across the North East — from Newcastle to Teesside and beyond.</p>
+        <span class="area-card-link">Learn more &rarr;</span>
+      </a>
+      <a href="fractional-cfo-newcastle.html" class="area-card fade-in">
+        <div class="area-card-title">Newcastle upon Tyne</div>
+        <p class="area-card-desc">Senior finance leadership for Newcastle businesses — from the Quayside to the science park.</p>
+        <span class="area-card-link">Learn more &rarr;</span>
+      </a>
+      <a href="fractional-cfo-yorkshire.html" class="area-card fade-in">
+        <div class="area-card-title">Yorkshire</div>
+        <p class="area-card-desc">CFO support for Leeds, Sheffield, York and the wider Yorkshire region.</p>
+        <span class="area-card-link">Learn more &rarr;</span>
+      </a>
+      <a href="fractional-cfo-teesside.html" class="area-card fade-in">
+        <div class="area-card-title">Teesside &amp; Tees Valley</div>
+        <p class="area-card-desc">Local fractional CFO services across Middlesbrough, Stockton, Hartlepool and the Tees Valley.</p>
+        <span class="area-card-link">Learn more &rarr;</span>
+      </a>
+      <a href="fractional-cfo-sunderland.html" class="area-card fade-in">
+        <div class="area-card-title">Sunderland &amp; Wearside</div>
+        <p class="area-card-desc">Strategic finance leadership for Sunderland businesses and across Wearside.</p>
+        <span class="area-card-link">Learn more &rarr;</span>
+      </a>
+      <a href="fractional-cfo-durham.html" class="area-card fade-in">
+        <div class="area-card-title">County Durham</div>
+        <p class="area-card-desc">CFO-level expertise for growing businesses across Durham City and County Durham.</p>
+        <span class="area-card-link">Learn more &rarr;</span>
+      </a>
     </div>
   </section>
 
